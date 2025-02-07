@@ -1,28 +1,100 @@
 * {
-  box-sizing: border-box;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+    background-color: #f2f3f4;
+    /* background-image: url(./img-building-webpage.png);
+    background-position: center;
+    background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-body header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
+
+body .container {
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 1vh;
 }
-body header h1 {
-  text-align: center;
-  margin-top: 50px;
-  font-family: "Roboto", sans-serif;
+
+body .container .title_webpage {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-body header h2 {
-  text-align: center;
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  color: gray;
-}/*# sourceMappingURL=style.css.map */
+
+body .container .description {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+body .container .foot {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 170%;
+}
+
+body .container .image {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container .signature {
+    font-size: 30px;
+    font-family: 'Comic Sans MS', sans-serif;
+    justify-content: center;
+}
+
+body .container .description code {
+    background-color: #c1c1c1f5;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.selectContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.selectContainer select {
+    border: 3px solid transparent;
+    background-color: #d2d6da;
+    border-radius: 5px;
+    padding: 7px;
+    transition: .3s ease-in-out all;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.selectContainer select:hover {
+    background-color: #dbe0e6;
+}
+
+.selectContainer select:focus {
+    outline: none;
+}
+
+.selectContainer select:active {
+    border-color: #0971daf9;
+    outline: none;
+}
