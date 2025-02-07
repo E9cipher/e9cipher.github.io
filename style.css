@@ -1,22 +1,28 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-
-body h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
 }
-
-body h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: gray;
+body header h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
 }
+body header h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}/*# sourceMappingURL=style.css.map */
