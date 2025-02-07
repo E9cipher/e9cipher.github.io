@@ -1,100 +1,109 @@
 * {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f2f3f4;
-    /* background-image: url(./img-building-webpage.png);
-    background-position: center;
-    background-repeat: no-repeat; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+body .break {
+  height: 50px;
 }
 
-body .container {
-    position: relative;
-    margin-top: 20vh;
-    margin-bottom: 1vh;
+/* --------------------------------- */
+/* First Nav */
+/* --------------------------------- */
+#firstNav {
+  background: #f8f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  -webkit-position: sticky;
+  position: sticky;
+  opacity: 100%;
+  margin: 8px;
 }
-
-body .container .title_webpage {
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
+body.dark #firstNav {
+  background: 222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
-
-body .container .description {
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto';
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 150%;
+body.dark #firstNav a {
+  color: #C8C8C8;
+  text-decoration: none;
 }
-
-body .container .foot {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 170%;
+body.dark #firstNav a:hover {
+  color: #FEFEFE;
 }
-
-body .container .image {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#firstNav .logotip {
+  cursor: pointer;
 }
-
-body .container .signature {
-    font-size: 30px;
-    font-family: 'Comic Sans MS', sans-serif;
-    justify-content: center;
+#firstNav button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
-
-body .container .description code {
-    background-color: #c1c1c1f5;
-    align-items: center;
-    border-radius: 5px;
-    padding: 2px;
+#firstNav .links {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  margin-left: 70px;
 }
-
-.selectContainer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 10px;
+#firstNav .links a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #111111;
+  transition: 0.3s ease-in-out all;
+  position: relative;
 }
-
-.selectContainer select {
-    border: 3px solid transparent;
-    background-color: #d2d6da;
-    border-radius: 5px;
-    padding: 7px;
-    transition: .3s ease-in-out all;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
+#firstNav .links a i {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
 }
-
-.selectContainer select:hover {
-    background-color: #dbe0e6;
+#firstNav .links a:hover {
+  text-decoration: underline;
 }
-
-.selectContainer select:focus {
-    outline: none;
+#firstNav .login {
+  display: flex;
+  align-items: end;
+  position: relative;
+  justify-content: right;
+  transition: 0.3s ease-in-out all;
 }
-
-.selectContainer select:active {
-    border-color: #0971daf9;
-    outline: none;
+#firstNav .login:hover a {
+  text-decoration: underline;
 }
+#firstNav .login:hover i {
+  color: #ACABAB;
+}
+#firstNav .login a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s ease-in-out all;
+}
+#firstNav .login a:hover {
+  text-decoration: underline;
+}
+#firstNav .login i {
+  font-size: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out all;
+}
+#firstNav .login i:hover {
+  color: #ACABAB;
+}/*# sourceMappingURL=style.css.map */
