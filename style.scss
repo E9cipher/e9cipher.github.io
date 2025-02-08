@@ -6,7 +6,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 10000px;
     background-color: #f4f4f4;
+    position: relative;
     // header {
     //     display: flex;
     //     justify-content: center;
@@ -58,10 +60,11 @@ body {
     border-radius: 5px;
     transition: .3s ease all;
     box-shadow: 10px 10px 20px rgba(170, 170, 170, .16);
-    -webkit-position: sticky;
     position: sticky;
+    position: -webkit-sticky;
     opacity: 100%;
     margin: 8px;
+    width: 100%;
 
     body.dark & {
         background: 222222;
